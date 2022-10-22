@@ -1,14 +1,17 @@
 .body{background-color: black!important;}
 
-.header{background-color: black!important;
+.header{background-color: black;
 padding-bottom: 0%;
 padding-top: 0%;
 line-height:0;}
 
 .navbar.bg-warning{
-    background-color: yellow!important;}
+    background: rgb(36,34,0);
+background: linear-gradient(90deg, rgba(36,34,0,1) 0%, rgba(141,149,6,1) 35%, rgba(228,255,0,1) 100%);}
 
 .encabezado {background-color: black!important;}
+
+.btn-edit {color:black}
 
 .presentacion{background-color: black;
      color: whitesmoke;
@@ -27,8 +30,10 @@ padding-left: 5%; }
 .card-text {text-align: justify;
 padding: 10xp,10xp,10xp,10xp}
 
-.card {background-color:yellow;}
-
+.card {background-color:yellow;
+color:black}
+.login {background-color: yellow;
+padding: 10px;}
 .educacion {background-color:black!important;
 padding-top:0%;
 padding-left: 10%;
@@ -59,6 +64,11 @@ img {
 padding-left: 10%;
 padding-right: 10%;}
 
+.proyectos {background-color: black;
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;  
+}
 .card.text-bg-warning {background-color:yellow !important}
 
 .laburo {background-color: black;

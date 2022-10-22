@@ -15,11 +15,12 @@
 </head>
 
 <body>
+  <!--Encabezado-->
     <header class="header">
       <nav class="navbar bg-warning">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="img/arg-programa.png" alt="Argentina Programa " width="100px " height="40 px">
+            <img src="img/arg-programa.png" alt="Argentina Programa " width="120px " height="50 px">
           </a>
           <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -43,14 +44,49 @@
               </svg></a>
             </li>
           </ul>
-          <button type="button" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-          </svg></button>
-        </div>
-      </nav>
-    </header>
+        <!--Login-->
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             LOGIN
+             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+        </button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--formulario-->
+        <div class="login">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Listo!</label>
+          </div>
+          <button type="submit" class="btn btn-dark">Ingresar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+</header>
+<!--Carrusel-->
     <div class="encabezado">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -74,15 +110,25 @@
             </button>
           </div>      
     </div>
- 
+ <!--presentacion-->
     <main>
+      <script>
+        function cambiar_parrafo(){}
+
+      </script>
+
         <section class="presentacion">
             <div class="card">
+              <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:black></i>
+                </a>
                 <div class="card-body">
                     Hola! Soy Iris y estoy buscando mi primer trabajo remoto en IT.<br>
                     Hace un año descubrí la pasión por codear y estoy lista <br> para a darle a mi vida un nuevo rumbo laboral! </h4>
                 </div>
             </div>
+          </div>
            
         </section>
         
@@ -96,8 +142,12 @@
 
         <section class="educacion">
             <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3"> 
             <div class="card border-success mb-3" style="max-width: 19rem;">
+               <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                </a>
                 <div class="card-header bg-transparent border-success">Argentina Programa</div>
                 <div class="card-body text-success">
                   <h5 class="card-title"><b>DESARROLLADORA WEB FULL STACK </b></h5>
@@ -106,8 +156,14 @@
                 <div class="card-footer bg-transparent border-success">2022</div>
             </div>
             </div>
+            </div>
             <div class="col-md-3">
+              
             <div class="card border-success mb-3" style="max-width: 19rem;">
+              <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                </a>
                 <div class="card-header bg-transparent border-success">Egg Cooperation</div>
                 <div class="card-body text-success">
                   <h5 class="card-title"><b>FUNDAMENTOS<BR> DE PROGRAMACIÓN</b></h5>
@@ -116,9 +172,15 @@
                 <div class="card-footer bg-transparent border-success">2022</div>
             </div>
             </div>
+            </div>
             <div class="col-md-3">
+              
                 <div class="card border-success mb-3" style="max-width: 19rem;">
-                    <div class="card-header bg-transparent border-success">UTN</div>
+                  <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                </a>
+                <div class="card-header bg-transparent border-success">UTN</div>
                     <div class="card-body text-success">
                       <h5 class="card-title"><b>LIC EN TECNOLOGÍA EDUCATIVA</b></h5>
                       <a href="#" class="btn btn-dark">ver certificación</a>
@@ -126,15 +188,22 @@
                     <div class="card-footer bg-transparent border-success">2020-tesis en proceso</div>
                 </div>
             </div>
+            </div>
             <div class="col-md-3">
+             
                 <div class="card border-success mb-3" style="max-width: 19rem;">
-                    <div class="card-header bg-transparent border-success">IFDC José.S.Salinas</div>
+                   <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                </a>
+                <div class="card-header bg-transparent border-success">IFDC José.S.Salinas</div>
                     <div class="card-body text-success">
                       <h5 class="card-title"><b>PROFESORA <br>EN TECNOLOGÍA</b></h5>
                       <a href="#" class="btn btn-dark">ver certificación</a>
                     </div>
                     <div class="card-footer bg-transparent border-success">2003-2008</div>
                 </div>
+            </div>
             </div>
         </div>
         </section>
@@ -150,7 +219,11 @@
        <section class="hard-skills">
         <div class=" row">
             <div class="col-md-3">
-                <div class="card">
+              <div class="card">
+                <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:black></i>
+                </a>
                     <img src="img/maquetadoweb.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title"><b>65%</b></h5>
@@ -160,9 +233,14 @@
                     </div>
                 </div>
             </div>
+            </div>
             <div class="col-md-3">
                 <div class="card">
-                    <img src="img/angular.png" class="card-img-top" alt="...">
+                  <div class= "btn-edit"   on click="cambiar_parrafo()">
+                    <a href="#" class="btn-ligth">
+                      <i class="fa-solid fa-user-pen" style=color:black></i>
+                    </a>  
+                  <img src="img/ang-node.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title"><b>50%</b></h5>
                       <div class="progress">  
@@ -171,8 +249,13 @@
                     </div>
                 </div>
             </div>
+            </div>
             <div class="col-md-3">
                 <div class="card">
+                  <div class= "btn-edit"   on click="cambiar_parrafo()">
+                    <a href="#" class="btn-ligth">
+                      <i class="fa-solid fa-user-pen" style=color:black></i>
+                    </a>
                     <img src="img/javaspring.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title"><b>50%</b></h5>
@@ -182,8 +265,14 @@
                     </div>
                   </div>
             </div>
+            </div>
             <div class="col-md-3">
                 <div class="card">
+                <div class= "btn-edit"   on click="cambiar_parrafo()">
+                    <a href="#" class="btn-danger">
+                      <i class="fa-solid fa-user-pen" style=color:black></i>
+                    </a>
+                    
                     <img src="img/msql.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title"><b>50%</b></h5>
@@ -193,6 +282,7 @@
                     </div>
                   </div>
             </div>
+        </div>
         </div>
         </section>
 
@@ -257,15 +347,68 @@
         <section class="imagen">
             <div class="row">
                 <div class=" col-md-2"></div>
-                <div class= "col-md-8"><img src="img/laburo.png"></div>
+                <div class= "col-md-8"><img src="img/proyectos.png"></div>
                 <div class=" col-md-2"></div>
             </div> 
          </section>
+ 
+        <section class="proyectos">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="tienda online kuichi">
+                <div class="card-body">
+                  <h5 class="card-title">KUICHI</h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/elvisteck.png" class="card-img-top" alt="web dentista">
+                <div class="card-body">
+                  <h5 class="card-title">DR ELVIS TECK </h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/curriculum.png" class="card-img-top" alt="curriculum argentina programa">
+                <div class="card-body">
+                  <h5 class="card-title">CURRICULUM </h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="" class="card-img-top" alt="web la profe de tecnologia">
+                <div class="card-body">
+                  <h5 class="card-title"> </h5>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="imagen">
+          <div class="row">
+              <div class=" col-md-2"></div>
+              <div class= "col-md-8"><img src="img/laburo.png"></div>
+              <div class=" col-md-2"></div>
+          </div> 
+       </section>
 
         <section class=" laburo">
             <div class="row">
             <div class="col-md-4">
               <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class= "btn-edit"   on click="cambiar_parrafo()">
+                  <a href="#" class="btn-ligth">
+                    <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                  </a>
                   <div class="card-header">Escuela Normal Juan.F.Quiroga</div>
                   <div class="card-body text-dark">
                     <h5 class="card-title">2016- actualidad</h5>
@@ -273,8 +416,13 @@
                   </div>
               </div>  
             </div>
+            </div>
             <div class="col-md-4">
             <div class="card border-dark mb-3" style="max-width: 18rem;">
+              <div class= "btn-edit"   on click="cambiar_parrafo()">
+                <a href="#" class="btn-ligth">
+                  <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                </a>
                 <div class="card-header">E.P.E.T N°1 Juan Marino Cioce</div>
                 <div class="card-body text-dark">
                   <h5 class="card-title">2016- actualidad</h5>
@@ -282,15 +430,21 @@
                 </div>
             </div>
             </div>
+            </div>
             
             <div class="col-md-4">
                 <div class="card border-dark mb-3" style="max-width: 18rem;">
+                  <div class= "btn-edit"   on click="cambiar_parrafo()">
+                    <a href="#" class="btn-ligth">
+                      <i class="fa-solid fa-user-pen" style=color:yellow></i>
+                    </a>
                     <div class="card-header">Colegio Provincial de Chepes</div>
                        <div class="card-body text-dark">
                     <h5 class="card-title">2016- actualidad</h5>
                     <p class="card-text">DOCENTE DE EDUCACIÓN TECNOLÓGICA</p>
                        </div>
                 </div>
+            </div>
             </div>
             </div>
         </section>
