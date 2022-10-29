@@ -50,8 +50,7 @@ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 .card-img-top {width: 40xp;left: 40xp;}
 
-img {
-    display: block;
+img {display: block;
     max-width: 100%;
     height: auto;}
 
